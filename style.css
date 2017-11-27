@@ -1,0 +1,196 @@
+body {
+    background-image: url('./resources/graphics/background.png');
+    font-family: 'Source Sans Pro', sans-serif;
+}
+    
+.main-window {
+    width: 80%;
+    border: solid lightgrey 1px;
+    height: 800px;
+    margin: 5% auto 0;
+    min-width: 500px;
+}
+
+.search-section {
+    width: 100%;
+    height: 80px;
+    background-color: #22688C;
+    text-align: center;
+}
+
+.searchbar {
+    width: 90%;
+    height: 40%;
+    margin-top: 24px;
+    border-radius: 4px;
+    border: none;
+    padding-left: 15px;
+}
+
+.results-filter {
+    background-color: white;
+    display: flex;
+    direction: row;
+    height:90%;
+}
+
+.filter-panel {
+    width: 30%;
+    border-right: solid rgb(236, 235, 235) 1px;
+    margin-left: 20px;
+    padding-top: 20px;
+    min-width: 180px;
+    
+}
+
+.results {
+    margin-left: 20px;
+    margin-top: -40px;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+
+.result-card {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+    width: 90%;
+    padding-right: 40px;
+}
+
+.result-card-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+.result-card-text {
+    margin-left: 20px;
+}
+
+#filter, #filter2, #filter3 {
+    margin-left: -25px;
+    margin-top: -5px;
+}
+
+.search-time{
+    color:rgb(88, 88, 88);
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.num-results {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+h3 span{
+    background:rgb(255, 255, 255);    
+}
+
+.restaurant-name {  
+    margin-top: -2px;
+    margin-bottom: -10px;
+}
+.restaurant-stars .restaurant-stars2{
+    color: rgb(150, 150, 150);
+}
+
+.restaurant-stars .restaurant-stars1 {
+    color: #FDAB6C;
+}
+
+.restaurant-stars img {
+    vertical-align: bottom;
+}
+
+.restaurant-info {
+    color: rgb(150, 150, 150);
+    margin-top: -5px;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+.food-li:hover {
+    background-color: rgb(63, 147, 189);
+    color: white;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    margin-left: -10px;
+}
+
+.food-li:hover > .right-label{
+    margin-left: 20px;
+}
+
+.food-li {
+    z-index: 100;
+}
+
+.price-li:hover > .right-label{
+    margin-left: 20px;
+}
+
+.price-li:hover {
+    background-color: rgb(63, 147, 189);
+    color: white;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    margin-left: -10px;
+}
+
+
+input[type="checkbox"]:checked + div {
+    background-color: rgb(63, 147, 189);
+    color: white;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    margin-left: -10px;
+    
+}
+
+.star{
+    height: 20px;
+}
+
+.right-label{
+    float: right;
+    margin-right: 15px;
+    color: darkgray;
+    padding-right: 20px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(177, 177, 177);;
+    font-size: 1.2em;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(177, 177, 177);;
+   opacity:  1;
+   font-size: 1.2em;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(177, 177, 177);;
+   opacity:  1;
+   font-size: 1.2em;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(177, 177, 177);;
+   font-size: 1.2em;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgb(177, 177, 177);
+   font-size: 1.2em;
+}
+
+@media (max-width: 770px) {
+    .filter-panel {
+        display: none;
+    }
+}
